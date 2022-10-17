@@ -97,6 +97,18 @@ containers.forEach(container=>{
         }
     })
 })
+
+
+
+const sortedOrder = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine'];
+const check = sortedOrder[3]
+const checkOrder = document.querySelectorAll('p') ;
+if(check === checkOrder){
+    alert('Game over!')
+}
+
+
+
 function getDragAfterElement(container, y) {
     const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
 
@@ -110,3 +122,16 @@ function getDragAfterElement(container, y) {
         }
     }, { offset: Number.NEGATIVE_INFINITY}).element
 }
+const checkSr = [{}]
+
+// var btnsArr = Array.prototype.slice.call(checkOrder);
+
+console.log(checkOrder);
+
+// var arr = [];
+// for(var i = 0; i < checkOrder.length; i++) arr.push(checkOrder[i]);
+// var arr = Array.prototype.slice.call( checkOrder, 0 );
+// const checkOrderArr = [...checkOrder.children].toString();
+// console.log(btnsArr)
+// console.log(check)
+// console.log(arr)
